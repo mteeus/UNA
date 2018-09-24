@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>PRATICA 02 ex 04</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/folhadeestilo.css">
+        
+    </head>
+    <body>
+        <form action="/pagina" method="post" >
+            <div>
+                <label for="login"> LOGIN: </label>
+                <input type="text" id="login" /> 
+            </div>
+            <div>
+                <label for="email"> EMAIL: </label>
+                <input type="text" id="email" /> 
+            </div>
+            <div>
+                <label for="datanasc"> DATA NASCIMENTO </label>
+                <input type="date" id="datanasc" /> 
+            </div>
+            <div>
+                <label for="senha"> SENHA: </label>
+                <input type="password" id="senha" /> 
+            </div>
+            <div>
+                <label for="csenha"> CONFIRMAR SENHA: </label>
+                <input type="password" id="csenha" /> 
+            </div>
+            <div>
+                <label for="sexo"> SEXO: </label>
+                <select id="sexo">
+                    <option> Masculino</option>
+                    <option> Feminino</option>
+                </select>
+            </div>
+            <div>
+                <label for="cidade"> CIDADE: </label>
+                <input type="text" id="cidade" /> 
+            </div>
+            <div>
+                <label for="homepage"> HOME-PAGE: </label>
+                <input type="text" value="http://" id="homepage" /> 
+            </div>
+            <div>
+                <label for="interesses"> INTERESSES: </label>
+                <input type="checkbox"  id="interesses" name="musica" value="MUSICA" > MUSICA 
+                <input type="checkbox"  id="interesses"  name="esporte" value="ESPORTE" > ESPORTE 
+                <input type="checkbox"  id="interesses"  name="moda" value="MODA" > MODA 
+            </div>
+            <div class="botaocad">
+                <button type="submit" name="cadastrar" id="cadastrar" > CADASTRAR </button>
+            </div>
+            <div class="botaolimpar">
+                <button type="submit" name="limpar" id="limpar" > LIMPAR </button>
+            </div>    
+            
+        </form>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+ 
+form {
+    margin: 0 auto;
+    width: 500px;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+div{
+    margin-top: 1rem;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+}
+
+.botaocad {
+    padding-left:  90px;
+   
+}
+.botaolimpar{
+    padding-left:  90px;
+}
