@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+ <!-- Definição e Mapeamento do Filtro: -->
+ <filter>
+ <filter-name>FiltroConexaoBancoDados</filter-name>
+ <filter-class>controller.filter.FiltroConexaoBancoDados</filter-class>
+ </filter>
+
+ <!-- Quando há mais de um filtro, a ordem dos elementos
+ <filter-mapping> define a ordem de execução dos filtros -->
+ <filter-mapping>
+ <filter-name>FiltroConexaoBancoDados</filter-name>
+ <url-pattern>/controlador</url-pattern>
+ <url-pattern>/cont</url-pattern>
+ </filter-mapping>
+ <!-- Definição e Mapeamento do Servlet: -->
+ <servlet>
+ <servlet-name>Controlador</servlet-name>
+ <servlet-class>controller.Controlador</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ <servlet-name>Controlador</servlet-name>
+ <url-pattern>/controlador</url-pattern>
+ <url-pattern>/cont</url-pattern>
+ </servlet-mapping>
+</web-app>
